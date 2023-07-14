@@ -7,7 +7,7 @@
         "build": "next build",
         "start": "next start",
         "lint": "next lint",
-        "build-css": "postcss src/styles.css -o dist/styles.css"
+         "vercel-build": "npm run prepare && next build"
     },
     "dependencies": {
         "@hookform/resolvers": "^3.0.0",
