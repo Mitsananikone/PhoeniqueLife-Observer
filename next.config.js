@@ -6,9 +6,10 @@ const nextConfig = {
         secret: 'Medlar75!Medlar75!'
     },
     publicRuntimeConfig: {
-        apiUrl: process.env.NODE_ENV === 'development'
-            ? 'http://localhost:3000/api' // development api
-            : 'http://localhost:3000/api' // production api
+        // apiUrl: process.env.NODE_ENV === 'development'
+        //     ? 'http://localhost:3000/api' // development api
+        //     : 'http://localhost:3000/api' // production api
+        https://localhost:3000/api
     }
 }
 
