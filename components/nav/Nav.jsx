@@ -22,8 +22,8 @@ export default function Nav() {
   // if (!user) return null;
 
   return (
-    // <nav className={"flex items-center justify-between bg-highlight px-3 py-2"}
-    // >
+    <nav className={"flex items-center justify-center bg-highlight px-3 py-2"}
+    >
     <div className="flex items-center justify-center">
   <div className="flex ">
     <DropdownAbout />
@@ -36,7 +36,7 @@ export default function Nav() {
     <DropDownContact buttonText="Contact" />
   </div>
 </div>
+</nav>
 
-    // </nav>
   );
 }
