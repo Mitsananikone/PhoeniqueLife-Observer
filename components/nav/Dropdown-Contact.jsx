@@ -13,7 +13,7 @@ export default function DropDownContact() {
   }, []);
 
   // only show nav when logged in
-  if (!user) return null;
+  // if (!user) return null;
 
   return (
     <div>
