@@ -15,7 +15,7 @@ export default function DropdownPlasticSurgery() {
   // if (!user) return null;
 
 const renderBreastDropdown = () => (
-  <ul className="bg-white border rounded-sm absolute top-0 right-0 transition duration-150 ease-in-out origin-top-left w-56">
+  <ul className="bg-white border rounded-sm absolute top-0 right-0 transition duration-500 ease-in-out origin-top-left w-56">
     <li className="px-3 py-1 hover:bg-gray-100">
       <NavLink href="/plasticsurgery/breast/augmentation">Breast Augmentation</NavLink>
     </li>
@@ -38,7 +38,7 @@ const renderBreastDropdown = () => (
 );
 
 const renderBodyDropdown = () => (
-  <ul className="bg-white border rounded-sm absolute top-0 right-0 transition duration-150 ease-in-out origin-top-left w-50">
+  <ul className="bg-white border rounded-sm absolute top-0 right-0 transition duration-500 ease-in-out origin-top-left w-50">
     <li className="px-3 py-1 hover:bg-gray-100">
       <NavLink href="/plasticsurgery/body/mummymakeover">Mummy Makeover</NavLink>
     </li>
@@ -61,7 +61,7 @@ const renderBodyDropdown = () => (
 );
 
 const renderFaceDropdown = () => (
-  <ul className="bg-white border rounded-sm absolute top-0 right-0 transition duration-150 ease-in-out origin-top-left w-56">
+  <ul className="bg-white border rounded-sm absolute top-0 right-0 transition duration-500 ease-in-out origin-top-left w-56">
     <li className="px-3 py-1 hover:bg-gray-100">
       <NavLink href="/plasticsurgery/face/rhinoplasty">Rhinoplasty</NavLink>
     </li>
@@ -94,7 +94,7 @@ const renderFaceDropdown = () => (
           </span>
         </button>
 
-        <ul className="bg-white border rounded-sm transform scale-0 group-hover:scale-100 absolute transition duration-150 ease-in-out origin-top w-40">
+        <ul className="bg-white border rounded-sm transform scale-0 group-hover:scale-100 absolute origin-top w-40">
           <li className="rounded-sm relative px-5 py-1 hover:bg-gray-100">
             <button className="w-full text-left flex items-center outline-none focus:outline-none">
               <span className="pr-1 flex-1">Breast</span>

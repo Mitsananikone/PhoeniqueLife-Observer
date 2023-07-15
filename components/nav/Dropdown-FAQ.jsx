@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import  NavLink  from "./NavLink";
 import { userService } from "services";
-
+import { RenderFAQ } from './RenderFAQ';
 
 export default function DropdownFAQ() {
   const [user, setUser] = useState(null);
@@ -14,59 +14,7 @@ export default function DropdownFAQ() {
   // only show nav when logged in
   // if (!user) return null;
 
-const renderBreastSurgeryDropdown = () => (
-  <ul className="bg-white border rounded-sm absolute top-0 right-0 transition duration-150 ease-in-out origin-top-left w-56">
-    <li className="px-3 py-1 hover:bg-gray-100">
-      <NavLink href="/faq/surgery/breast-augmentation-faq">Breast Augmentation FAQ</NavLink>
-    </li>
-    <li className="px-3 py-1 hover:bg-gray-100">
-      <NavLink href="/faq/surgery/breast-lift-faq">Breast Lift FAQ</NavLink>
-    </li>
-    <li className="px-3 py-1 hover:bg-gray-100">
-      <NavLink href="/faq/surgery/breast-reduction-faq">Breast Reduction FAQ</NavLink>
-    </li>
-    <li className="px-3 py-1 hover:bg-gray-100">
-      <NavLink href="/faq/surgery/breast-revision-faq">Breast Revision FAQ</NavLink>
-    </li>
-    <li className="px-3 py-1 hover:bg-gray-100">
-      <NavLink href="/faq/surgery/breast-explant-faq">Breast Explant FAQ</NavLink>
-    </li>
-    <li className="px-3 py-1 hover:bg-gray-100">
-      <NavLink href="/faq/surgery/breast-male-faq">Male Breast Reduction FAQ</NavLink>
-    </li>
-    <li className="px-3 py-1 hover:bg-gray-100">
-      <NavLink href="/faq/surgery/body-mummy-faq">Mummy Makeover FAQ</NavLink>
-    </li>
-    <li className="px-3 py-1 hover:bg-gray-100">
-      <NavLink href="/faq/surgery/body-tummy-faq">Tummy Tuck FAQ</NavLink>
-    </li>
-    <li className="px-3 py-1 hover:bg-gray-100">
-      <NavLink href="/faq/surgery/body-labiaplasty-faq">Labiaplasty FAQ</NavLink>
-    </li>
-    <li className="px-3 py-1 hover:bg-gray-100">
-      <NavLink href="/faq/surgery/body-armlift-faq">Arm Lift FAQ</NavLink>
-    </li>
-    <li className="px-3 py-1 hover:bg-gray-100">
-      <NavLink href="/faq/surgery/body-thighlift-faq">Thigh Lift FAQ</NavLink>
-    </li>
-    <li className="px-3 py-1 hover:bg-gray-100">
-      <NavLink href="/faq/surgery/body-weightloss-faq">Weight Loss Surgery FAQ</NavLink>
-    </li>
-    <li className="px-3 py-1 hover:bg-gray-100">
-      <NavLink href="/faq/surgery/face-rhinoplasty-faq">Rhinoplasty FAQ</NavLink>
-    </li>
-    <li className="px-3 py-1 hover:bg-gray-100">
-      <NavLink href="/faq/surgery/face-facelift-faq">Facelift FAQ</NavLink>
-    </li>
-    <li className="px-3 py-1 hover:bg-gray-100">
-      <NavLink href="/faq/surgery/face-eyelidlift-faq">Eyelid Lift FAQ</NavLink>
-    </li>
-    <li className="px-3 py-1 hover:bg-gray-100">
-      <NavLink href="/faq/surgery/face-earpinning-faq">Ear Pinning FAQ</NavLink>
-    </li>
-
-  </ul>
-);
+  
 
 
   return (
@@ -76,7 +24,7 @@ const renderBreastSurgeryDropdown = () => (
           <span className="pr-1 font-semibold flex-1">FAQ</span>
           <span>
             <svg
-              className="fill-current h-4 w-4 transform group-hover:-rotate-180 transition duration-150 ease-in-out"
+              className="fill-current h-4 w-4 transform group-hover:-rotate-180 transition duration-75 ease-in-out"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
             >
@@ -85,7 +33,7 @@ const renderBreastSurgeryDropdown = () => (
           </span>
         </button>
 
-        <ul className="bg-white border rounded-sm transform scale-0 group-hover:scale-100 absolute transition duration-150 ease-in-out origin-top w-40">
+        <ul className="bg-white border rounded-sm transform scale-0 group-hover:scale-100 absolute origin-top w-40">
           <li className="rounded-sm relative px-5 py-1 hover:bg-gray-100">
             <button className="w-full text-left flex items-center outline-none focus:outline-none">
               <span className="pr-1 flex-1">Surgery FAQ</span>
@@ -99,7 +47,7 @@ const renderBreastSurgeryDropdown = () => (
                 </svg>
               </span>
             </button>
-            {renderBreastSurgeryDropdown()}
+            <RenderFAQ/>
           </li>
           <li className="rounded-sm relative px-5 py-1 hover:bg-gray-100">
             <NavLink href="/faq/surgeons-faq/page">Surgeon FAQ </NavLink>
@@ -133,5 +81,7 @@ const renderBreastSurgeryDropdown = () => (
       `}
       </style>
     </div>
+    
   );
+  
 }

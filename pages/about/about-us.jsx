@@ -1,3 +1,4 @@
+"use client";
 
 import { userService } from 'services';
 

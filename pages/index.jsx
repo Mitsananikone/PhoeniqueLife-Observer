@@ -1,13 +1,13 @@
 import { userService } from 'services';
+import { LandingPage } from '../pages/home/page';
+import { App } from './_app';
 
-export default Home;
-
-function Home() {
+ export default function Home() {
     return (
-        <div >
-            <div className="container w-full">
-
-            </div>
+        <div className="container">
+        <div className="flex items-center justify-center h-full w-full temptitle">
+            HOMEPAGE
         </div>
+     </div>
     );
 }

@@ -36,7 +36,7 @@ export default function DropDownAbout() {
             <NavLink href="/about/about-us">About Us </NavLink>
           </li>
           <li className="rounded-sm relative px-5 py-1 hover:bg-gray-100">
-            <NavLink href="/about/travel">About Us </NavLink>
+            <NavLink href="/about/travel">Travel </NavLink>
           </li>
         </ul>
       </div>
