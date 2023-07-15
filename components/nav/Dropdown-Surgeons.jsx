@@ -13,7 +13,7 @@ export default function DropDownSurgeons() {
   }, []);
 
   // only show nav when logged in
-  if (!user) return null;
+  // if (!user) return null;
 
   const renderAboutDropdown = () => (
     <ul className="bg-white border rounded-sm absolute top-0 right-0 transition duration-150 ease-in-out origin-top-left w-50">
